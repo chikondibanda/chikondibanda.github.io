@@ -1,3 +1,51 @@
+
+@font-face { 
+  font-family: universalis; 
+  src: url('UniversalisADFStd-Regular.otf'); 
+}
+
+/*
+	00. Reset Defaults
+*/
+
+	ul li {
+		list-style-type: none;
+	}
+
+	a {
+		text-decoration: none;
+	}
+/*
+	01. General
+*/
+
 body {
 	margin: 0;
+	font-family: 'universalis', monospace;
+	font-weight: 100;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: .05em;
+}
+
+
+/*
+	02. Layout 
+*/
+
+
+header {
+	display: grid;
+	grid-template-colums: 50px auto;
+	height: 600;
+	text-align: center;
+}
+
+nav ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-content: center;
+/*	width: 300px;*/
+} 
+
