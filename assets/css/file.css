@@ -9,8 +9,19 @@
 
 @font-face {
 	font-family: "InstrumentSans";
-	src: url("InstrumentSans-Regular.otf") format("opentype");
+	src: url("../fnts/InstrumentSans-Regular.ttf") format("opentype");
 }
 
 /* 01. General */
 
+body {
+	font-family: "InstrumentSans";
+}
+
+
+h1 {
+	font-family: "Staatliches";
+	font-size: 3em;
+	margin: 0;
+	padding: 0;
+}
