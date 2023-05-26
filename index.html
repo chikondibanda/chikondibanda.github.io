@@ -9,21 +9,33 @@
 	<link rel="stylesheet" href="assets/css/file.css">
 </head>
 <body>
-	<navbar class="navbar">
-		<div class="container">
-			<nav class="menu">
-				<ul class="">
-					<li class="column"><a href="">home</a></li>
-					<li class="column"><a href="">services</a></li>
-					<li class="column"><a href="">work</a></li>
-					<li class="column"><a href="">Let's Talk</a></li>
-				</ul>
-			</nav>
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<div class="navbar-item">
+				<span> <strong>CKM</strong> BANDA</span>
+			</div>
+      		<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarYanga">
+ 				<span aria-hidden="true"></span>
+  				<span aria-hidden="true"></span>
+  				<span aria-hidden="true"></span>
+			</a>
 		</div>
-	</navbar>
-	<div class="hero">
+		<div class="navbar-menu" id="navbarYanga">
+			<div class="navbar-end">
+				<a href="" class="navbar-item">home</a>
+				<a href="" class="navbar-item">services</a>
+				<a href="" class="navbar-item">my work</a>
+
+				<div class="navbar-item">
+					<a href="" class="button is-outlined is-rounded">let's talk</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="hero is-centered">
 		<div class="container ls columns">
-			<div class="column">
+			<div class="column is-offset-two">
 				<span class="has-text-weight-semibold">GREETINGS, I'M</span>
 				<h1>Chikondi Banda</h1>
 				<p>I create visual assets that elevate your <br> brand, including graphic designs, <br> websites and videos.</p>
@@ -37,8 +49,7 @@
 
 			</div>
 			<div class="column">
-				ldfjdkl
-				-------
+				that's me
 			</div>
 		</div>
 	</div>
@@ -53,5 +64,6 @@
 		</div>
 	</footer>
 	<main>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>
