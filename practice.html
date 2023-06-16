@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.canvas {
+			 height: 700px;
+			 width: 100%;
+			 background: beige;
+			 display: flex;
+			 justify-content: center;
+			 align-items: center;
+		}
+
+		button {
+			border-radius: 0;
+			font-family: "Instrument Sans";
+			padding: .5rem 2rem;
+			transition: transform 1000ms;
+		}
+
+
+		button:hover {
+			transform: translateY(-1em);
+			transition: transform 300ms;
+			animation: chikondi 5000ms infinite;
+		}
+
+
+		@keyframes 	chikondi {
+			0%, 50% {
+				background: red;
+			}
+
+			25%, 75% {
+				background: green;
+			}
+
+			100% {
+				background: blue;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="canvas">
+		<div cl]=><button>Hello Animation</button></div>
+	</div>
+</body>
+</html>

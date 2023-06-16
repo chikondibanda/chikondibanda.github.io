@@ -3,11 +3,6 @@
 /* 00. Add fonts  */
 
 @font-face {
-	font-family: "Staatliches";
-	src: url("../fnts/Staatliches-Regular.ttf");
-}
-
-@font-face {
 	font-family: "InstrumentSans";
 	src: url("../fnts/InstrumentSans-Regular.ttf") format("opentype");
 }
@@ -16,22 +11,25 @@
 
 body {
 	font-family: "InstrumentSans";
-	background: url("../img/gggrain.svg");
-	background-size: cover;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: "DM serif Sans";
+}
 
 h1 {
-	font-family: "Staatliches";
-	font-size: 3em;
+	font-size: 3.5em;
 	margin: 0;
 	padding: 0;
 	line-height: 1.125em;
+	font-weight: 600;
 }
 
 /*
 	CUSTOM UTILITIES
 */
+
+.
 
 .has-radius-none {
 	border-radius: 0 !important;
