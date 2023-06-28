@@ -9,6 +9,10 @@
 
 /* 01. General */
 
+html {
+	scroll-behavior: smooth !important;
+}
+
 body {
 	font-family: "InstrumentSans";
 }
@@ -23,6 +27,16 @@ h1 {
 	padding: 0;
 	line-height: 1.125em;
 	font-weight: 600;
+}
+
+/* 02. Sections */
+
+
+/* 02. i . Contact us */
+
+#contact h5 {
+	font-family: Poppins, sans-serif;
+	font-weight: 300;
 }
 
 /*
