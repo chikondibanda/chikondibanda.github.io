@@ -28,7 +28,7 @@
  */
 
 :root {
-    --theme-red: #ef3724;
+    --theme-red:    #89CFF0;
     --theme-blue: #2960f7;
     --theme-green: #8cc63f;
     --theme-orange: #fd7e14;
@@ -116,7 +116,7 @@ a:hover, a:active {
 }
 
 .btn-theme:hover, .btn-theme:active {
-    background-color: #808080;
+    background-color: #2960f7;
     color: #fff;
 }
 
@@ -140,7 +140,7 @@ a:hover, a:active {
 }
 
 .btn-theme-outline:hover {
-    background-color: #747474;
+    background-color: #2960f7;
     color: #fff;
 }
 
@@ -310,7 +310,7 @@ a:hover, a:active {
 }
 
 .bg-theme-red {
-    background-color: #ef3724 !important;
+    background-color: #007bff !important;
 }
 
 .bg-theme-blue {
@@ -330,7 +330,7 @@ a:hover, a:active {
 }
 
 .fg-theme-red {
-    color: #ef3724 !important;
+    color: #007bff !important;
 }
 
 .fg-theme-blue {
@@ -1057,7 +1057,7 @@ a:hover, a:active {
     bottom: 0;
     padding: 12px 16px;
     width: 100%;
-    background-color: #323131;
+    background-color: #141516;
     color: #fff;
     z-index: 11;
 }
@@ -1091,63 +1091,63 @@ a:hover, a:active {
 
 /* Theme red */
 .theme-red .bg-theme {
-    background-color: #EF3724 !important;
+    background-color: #007bff !important;
 }
 
 .theme-red .fg-theme {
-    color: #EF3724 !important;
+    color: #007bff !important;
 }
 
 .theme-red .btn-theme {
-    background-color: #EF3724;
+    background-color: #007bff;
     color: #fff;
 }
 
 .theme-red .btn-theme:hover {
-    background-color: #F04936;
+    background-color: #007bff;
     color: #fff;
 }
 
 .theme-red .btn-theme:focus {
-    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #EF3724;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #007bff;
 }
 
 .theme-red .btn-theme-outline {
-    color: #EF3724;
-    box-shadow: 0 0 0 2px #EF3724;
+    color: #007bff;
+    box-shadow: 0 0 0 2px #007bff;
 }
 
 .theme-red .btn-theme-outline:hover {
-    background-color: #EF3724;
+    background-color: #2960f7;
     color: #fff;
 }
 
 .theme-red .btn-theme-outline:focus {
-    background-color: #EF3724;
+    background-color: #007bff;
     color: #fff;
-    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #EF3724;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #007bff;
 }
 
 .theme-red .btn-fab {
-    background-color: #EF3724;
+    background-color: #007bff;
     color: #fff;
 }
 
 .theme-red .btn-fab:hover {
-    background-color: #F04936;
+    background-color: #2960f7;
     color: #fff;
 }
 
 .theme-red .progress {
-    box-shadow: 0 0 0 2px #EF3724;
+    box-shadow: 0 0 0 2px #007bff;
 }
 
 .theme-red .progress-bar {
-    background-color: #EF3724;
+    background-color: #007bff;
 }
 
 .theme-red .theme-list li::before {
-    border-color: #EF3724;
+    border-color: #007bff;
 }
 
 
@@ -1166,7 +1166,7 @@ a:hover, a:active {
 }
 
 .theme-blue .btn-theme:hover {
-    background-color: #3f71f8;
+    background-color: #2960f7;
     color: #fff;
 }
 
@@ -1196,7 +1196,7 @@ a:hover, a:active {
 }
 
 .theme-blue .btn-fab:hover {
-    background-color: #3f71f8;
+    background-color: #2960f7;
     color: #fff;
 }
 
