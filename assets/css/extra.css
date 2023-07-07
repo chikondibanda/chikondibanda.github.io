@@ -1,0 +1,12 @@
+
+
+
+.zapano {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1.5em;
+}
+
+.zapano a > img {
+	border-radius: .3em;
+}
