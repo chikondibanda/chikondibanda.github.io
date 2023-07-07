@@ -1,6 +1,9 @@
 
 
 
+/* 01. My Work  */
+
+
 .zapano {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -9,4 +12,23 @@
 
 .zapano a > img {
 	border-radius: .3em;
+}
+
+
+/* 02. Affiliate logos */
+
+.affiliate img {
+	width: 200px;
+}
+
+.affiliate .aaw img {
+	width: 130px;
+}
+
+.affiliate .kaza img {
+	width: 90px;
+}
+
+.affiliate .yanobe img {
+	width: 70px;
 }
