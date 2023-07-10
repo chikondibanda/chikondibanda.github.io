@@ -6,7 +6,7 @@
 
 .zapano {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	grid-gap: 1.5em;
 }
 
@@ -18,7 +18,7 @@
 /* 02. Affiliate logos */
 
 .affiliate img {
-	width: 200px;
+	width: 150px;
 }
 
 .affiliate .aaw img {
@@ -31,4 +31,14 @@
 
 .affiliate .yanobe img {
 	width: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  .greetings h1{
+    font-size: 2.25em;
+  }
+
+  .greetings p {
+  	font-size: 1.5em !important;
+  }
 }
