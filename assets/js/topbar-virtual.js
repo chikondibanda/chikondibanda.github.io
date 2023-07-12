@@ -1,25 +1,4 @@
 $(function() {
-  var $grid = $('.gridder').isotope({
-    itemSelector: '.grid-item',
-    percentPosition: true
-  });
-  
-  // filter items on button click
-  $('.filterable-button').on( 'click', 'button', function() {
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-  });
-  
-  $('.testi-carousel').owlCarousel({
-    margin: 0,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 4000,
-    items: 1,
-  });
-  
-  // Nice select
-  $('.vg-select').niceSelect();
   
   // Tooltip
   $('[data-toggle="tooltip"]').tooltip();
