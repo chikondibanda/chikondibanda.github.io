@@ -1,4 +1,4 @@
-# CHIKONDI BANDA - My Portifolio
+# CHIKONDI BANDA
 ### chikondibanda.github.io
 
-My face on the web. This repo host my personal portifolio 
+Welcome to my website. I'm happy to see you here.
