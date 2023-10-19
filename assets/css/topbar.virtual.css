@@ -497,8 +497,8 @@
 /* Theme color style */
 /* Theme Red */
 .theme-red .badge-subhead {
-  background-color: rgba(0, 123, 255, 0.25);
-  color: #007bff;
+  background-color: #007bff;
+  color: #f8f9fa;
 }
 
 .theme-red .filterable-button .btn.selected,
