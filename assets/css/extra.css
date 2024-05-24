@@ -22,6 +22,10 @@
 	border-radius: .3em;
 }
 
+.iconz {
+	display: none;
+}
+
 
 /* 02. Affiliate logos */
 
@@ -37,8 +41,8 @@
 	width: 90px;
 }
 
-.affiliate .yanobe img {
-	width: 70px;
+.affiliate .picc img {
+	width: 80px;
 }
 
 @media only screen and (max-width: 600px) {
