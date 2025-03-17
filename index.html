@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/virtual.css">
+    <style>
+        .navbar {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-item {
+            font-family: 'Bricolage Grotesque', sans-serif;
+        }
+        .navbar-brand .navbar-item {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .button.is-primary {
+            background-color: #4a4a4a;
+            transition: background-color 0.3s;
+        }
+        .button.is-primary:hover {
+            background-color: #363636;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 <body>
-    <section class="hero is-primary">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <strong>Chikondi Banda</strong>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasic" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="#about">
+                    About
+                </a>
+
+                <a class="navbar-item" href="#projects">
+                    Projects
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#skills">
+                            Skills
+                        </a>
+                        <a class="navbar-item" href="#experience">
+                            Experience
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="#contact">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary" href="assets/chikondi-banda-cv.pdf" target="_blank">
+                            <strong>Download CV</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-white">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
@@ -20,7 +102,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer is-white">
         <div class="content has-text-centered">
             <p>
                 <strong>Portfolio</strong> by Chikondi Banda</a>.
@@ -32,5 +114,25 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
