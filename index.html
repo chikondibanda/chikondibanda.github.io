@@ -1,121 +1,508 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="emerald">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <!-- DaisyUI + Tailwind CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Bricolage Grotesque', sans-serif;
-        }
-
-        .social-icons a {
-            margin: 0 10px;
-            font-size: 1.5rem;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chikondi Banda | Platform Specialist</title>
+    <meta name="description" content="Portfolio of Chikondi Banda — Platform Specialist with 5+ years of expertise driving platform efficiency, automating workflows, and building digital solutions." />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <nav class="navbar bg-base-100 shadow-md fixed top-0 left-0 right-0 z-50">
-        <div class="w-full max-w-7xl mx-auto flex flex-wrap justify-between items-center px-4 py-2">
-            <a class="btn btn-ghost normal-case text-xl" href="/">
-                <strong>Chikondi Banda</strong>
-            </a>
-            <div class="flex flex-wrap gap-2">
-                <a class="btn btn-ghost" href="/">Home</a>
-                <a class="btn btn-ghost" href="#about">About</a>
-                <a class="btn btn-ghost" href="#projects">Projects</a>
-                <div class="dropdown dropdown-hover">
-                    <label tabindex="0" class="btn btn-ghost">More</label>
-                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <a class="btn btn-primary" href="assets/chikondi-banda-cv.pdf" target="_blank">
-                    <strong>Download CV</strong>
-                </a>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">CB</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <section class="hero min-h-screen bg-base-200 flex items-center justify-center pt-32 px-4">
-        <div class="text-center w-full max-w-2xl mx-auto">
-            <h1 class="text-3xl sm:text-5xl font-bold mb-6">Coming Soon</h1>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-4" id="countdown">
-                <div>
-                    <span class="countdown font-mono text-4xl sm:text-5xl" id="days">5</span>
-                    <div class="text-sm">Days</div>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="hero-badge">Available for opportunities</div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Chikondi Banda</span>
+                    </h1>
+                    <p class="hero-subtitle">Platform Specialist</p>
+                    <p class="hero-desc">
+                        5+ years of experience driving platform efficiency, automating workflows, 
+                        and building web &amp; digital solutions for organizations across fintech, 
+                        media, and social enterprise.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#experience" class="btn btn-primary">
+                            <i class="fas fa-briefcase"></i> View Experience
+                        </a>
+                        <a href="mailto:chicokbanda@gmail.com" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> Email Me
+                        </a>
+                        <a href="https://wa.me/265882832044" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Me
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="mailto:chicokbanda@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+265882832044" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                        <a href="https://wa.me/265882832044" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/chikondibanda" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/chikondibanda" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-                <div>
-                    <span class="countdown font-mono text-4xl sm:text-5xl" id="hours">00</span>
-                    <div class="text-sm">Hours</div>
-                </div>
-                <div>
-                    <span class="countdown font-mono text-4xl sm:text-5xl" id="minutes">00</span>
-                    <div class="text-sm">Minutes</div>
-                </div>
-                <div>
-                    <span class="countdown font-mono text-4xl sm:text-5xl" id="seconds">00</span>
-                    <div class="text-sm">Seconds</div>
+                <div class="hero-image-col">
+                    <div class="hero-image-card">
+                        <div class="hero-image-inner">
+                            <img src="img/chikondibanda.jpeg" alt="Chikondi Banda" class="hero-photo" />
+                        </div>
+                        <div class="hero-image-decoration"></div>
+                    </div>
                 </div>
             </div>
-            <p class="text-base sm:text-lg">Stay tuned for something awesome!</p>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
     </section>
 
-    <footer class="footer p-6 sm:p-10 bg-base-100 text-base-content">
-        <div class="w-full max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p class="mb-2 sm:mb-0">
-                <strong>Portfolio</strong> by Chikondi Banda.
-            </p>
-            <div class="social-icons mt-2 sm:mt-0">
-                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Professional Profile</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-split">
+                <div class="about-image-side">
+                    <div class="about-image-inner">
+                        <img src="img/chikondibanda.jpeg" alt="Chikondi Banda" />
+                    </div>
+                </div>
+                <div class="about-card about-card-main">
+                    <div class="about-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="about-text">
+                        Ever since I built my first website in high school, I've been fascinated by the 
+                        intersection of technology and human impact. I'm Chikondi — a Platform Specialist, 
+                        self-taught builder, and digital strategist based in Lilongwe, Malawi.
+                    </p>
+                    <p class="about-text">
+                        My journey has taken me across fintech, media, social enterprise, and advocacy — 
+                        from co-founding a tech-for-good organization to leading digital strategy for a 
+                        UN Foundation-affiliated girls' empowerment program. Along the way, I've picked up 
+                        PHP, Go, Python, cloud infrastructure, and more — not for the sake of the tools, 
+                        but for what they can <em>build</em>.
+                    </p>
+                    <p class="about-text">
+                        I speak three languages (English, Chichewa, and Japanese — <em>mada mada</em> but 
+                        I'm learning), and I believe technology should serve people, not the other way around. 
+                        Whether I'm automating a workflow, designing a brand identity, or mentoring the next 
+                        generation of African tech talent, I bring the same philosophy: build thoughtfully, 
+                        iterate relentlessly, and never lose sight of <strong>who</strong> you're building for.
+                    </p>
+                    <p class="about-text about-text-signoff">
+                        When I'm not behind a screen, you'll find me creating content for my YouTube channel, 
+                        exploring Lilongwe's growing tech scene, or learning something new just because it 
+                        sparks my curiosity. Let's build something meaningful.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section><!-- ===== EXPERIENCE ===== -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="exp-columns">
+                <div class="exp-col">
+                    <div class="exp-col-header">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Professional Experience</h3>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">Aug 2024 – Present</div>
+                                <h3>Platform Specialist</h3>
+                                <h4>UTS Africa Limited</h4>
+                                <p>Manage and optimize enterprise digital platforms, driving process automation that improves operational efficiency while ensuring platform reliability, security, and performance at scale.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">Mar 2024 – Jul 2024</div>
+                                <h3>Graphic Designer</h3>
+                                <h4>Pentecost International Christian Centre</h4>
+                                <p>Produced compelling visual content across digital and print media, strengthening brand identity and communications for a multi-channel audience.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">Jan 2024 – Feb 2024</div>
+                                <h3>Graphic Designer</h3>
+                                <h4>Design &amp; Printing PLUS</h4>
+                                <p>Designed marketing collateral and print materials under tight deadlines, consistently delivering high-quality visuals that met client specifications.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">Feb 2023 – Jun 2023</div>
+                                <h3>Multimedia Designer</h3>
+                                <h4>Alpha Audio Works MW</h4>
+                                <p>Produced multimedia content spanning video, audio, and graphics for diverse client projects, handling end-to-end production from concept to final delivery.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">Nov 2022 – Jan 2023</div>
+                                <h3>Co-founder &amp; Director of Engineering</h3>
+                                <h4>The Pangolins MW</h4>
+                                <p>Co-founded the organization and led technical operations and engineering projects, establishing quality standards and ensuring on-time delivery across all initiatives.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2023</div>
+                                <h3>Direct Sales Agent / Brand Promoter</h3>
+                                <h4>First Capital Bank</h4>
+                                <p>Promoted banking products and services, building client relationships and consistently meeting sales targets in a competitive environment.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2019 – 2021</div>
+                                <h3>Junior Web Developer / Database Clerk</h3>
+                                <h4>Beehive Centre for Social Enterprise</h4>
+                                <p>Developed and maintained websites and managed databases, supporting digital transformation initiatives that streamlined organizational operations and improved data accessibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-col">
+                    <div class="exp-col-header">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Volunteering</h3>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2025 – Present</div>
+                                <h3>Digital Director</h3>
+                                <h4>Girl Up Kuwala</h4>
+                                <p>Lead digital strategy and manage online presence for a UN Foundation-affiliated girls' empowerment organization, coordinating campaigns and digital initiatives that amplify advocacy and leadership programs across Malawi.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2026 – Present</div>
+                                <h3>Digital Infrastructure Lead</h3>
+                                <h4>The Pangolins MW</h4>
+                                <p>Lead digital infrastructure and technical systems for a tech-for-good organization, building and maintaining the technology backbone that powers mission-driven initiatives and community programs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Skills &amp; Tools</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages &amp; Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/php/7a7a9e" alt="" loading="lazy"> PHP</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/python/7a7a9e" alt="" loading="lazy"> Python</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/react/7a7a9e" alt="" loading="lazy"> React Native</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/go/7a7a9e" alt="" loading="lazy"> Go</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/tailwindcss/7a7a9e" alt="" loading="lazy"> TailwindCSS</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/html5/7a7a9e" alt="" loading="lazy"> HTML/CSS</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/laravel/7a7a9e" alt="" loading="lazy"> Laravel</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/fastapi/7a7a9e" alt="" loading="lazy"> FastAPI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>CMS &amp; E-commerce</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/wordpress/7a7a9e" alt="" loading="lazy"> WordPress</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/woocommerce/7a7a9e" alt="" loading="lazy"> WooCommerce</span>
+                        <span class="skill-tag">PayChangu</span>
+                        <span class="skill-tag">OneKhusa</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Design &amp; Media</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/adobe/7a7a9e" alt="" loading="lazy"> Adobe Creative Suite</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/figma/7a7a9e" alt="" loading="lazy"> Figma</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/affinity/7a7a9e" alt="" loading="lazy"> Affinity</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/canva/7a7a9e" alt="" loading="lazy"> Canva</span>
+                        <span class="skill-tag">Lunacy</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Productivity &amp; Ops</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/microsoftoffice/7a7a9e" alt="" loading="lazy"> Microsoft 365</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/googleworkspace/7a7a9e" alt="" loading="lazy"> Google Workspace</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/odoo/7a7a9e" alt="" loading="lazy"> Odoo</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/trello/7a7a9e" alt="" loading="lazy"> Trello</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/jira/7a7a9e" alt="" loading="lazy"> Jira</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud &amp; DevOps</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/git/7a7a9e" alt="" loading="lazy"> Git / GitHub</span>
+                        <span class="skill-tag">SSH</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/googleanalytics/7a7a9e" alt="" loading="lazy"> Google Analytics</span>
+                        <span class="skill-tag"><img class="skill-icon" src="https://cdn.simpleicons.org/amazonwebservices/7a7a9e" alt="" loading="lazy"> AWS</span>
+                        <span class="skill-tag">Cybersecurity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Education</span>
+                <h2 class="section-title">Academic Qualifications</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-year">2025 – 2029</div>
+                    <h3>Bachelor of Business Information Systems</h3>
+                    <h4>Malawi Assemblies of God University</h4>
+                    <p>Pursuing a comprehensive degree focused on the intersection of business and information technology.</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="edu-year">2018 – 2020</div>
+                    <h3>Intermediate Certificate in ICT</h3>
+                    <h4>St John Paul II College</h4>
+                    <p>Completed foundational training in information and communications technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Let's work together</h3>
+                        <p>I'm always open to new opportunities, collaborations, and interesting projects. Reach out anytime!</p>
+                        <div class="contact-alt">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span>Email</span>
+                                    <a href="mailto:chicokbanda@gmail.com">chicokbanda@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span>Phone</span>
+                                    <a href="tel:+265882832044">265 882 832 044</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span>Location</span>
+                                    <p>Area 49, Lilongwe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <div class="contact-cta-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>Prefer instant messaging?</h3>
+                        <p>I typically respond within a few hours on WhatsApp.</p>
+                        <a href="https://wa.me/265882832044" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i> Start Chat
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== YOUTUBE ===== -->
+    <section class="section youtube" id="youtube">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Content</span>
+                <h2 class="section-title">YouTube Channel</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="youtube-card">
+                <div class="youtube-icon">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <h3>Chikondi Banda MW</h3>
+                <p>
+                    I create content about tech, digital strategy, and building things that matter — 
+                    from platform walkthroughs and automation tutorials to reflections on Malawi's 
+                    growing tech ecosystem. Subscribe and join the journey.
+                </p>
+                <a href="https://www.youtube.com/@chikondibandamwn" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn btn-youtube">
+                    <i class="fab fa-youtube"></i> Subscribe
+                </a>
+                <div class="youtube-stats">
+                    <span><i class="fas fa-video"></i> Tech &amp; Digital Content</span>
+                    <span><i class="fas fa-users"></i> Join the Community</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VIDEOS ===== -->
+    <section class="section videos" id="videos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Watch</span>
+                <h2 class="section-title">Latest Videos</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-embed">
+                        <iframe src="https://www.youtube-nocookie.com/embed/Uqts-AqcQGc" title="Gradients in Lunacy" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Gradients in Lunacy</h3>
+                        <span class="video-tag">Tutorial</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed">
+                        <iframe src="https://www.youtube-nocookie.com/embed/WVh9kYBd890" title="Master Real Estate Flyers in Lunacy" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Master Real Estate Flyers in Lunacy</h3>
+                        <span class="video-tag">Design</span>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed">
+                        <iframe src="https://www.youtube-nocookie.com/embed/Y_-IALu7mhE" title="Blogger Monetization Strategy" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Blogger Monetization Strategy</h3>
+                        <span class="video-tag">Strategy</span>
+                    </div>
+                </div>
+            </div>
+            <div class="videos-cta">
+                <a href="https://www.youtube.com/@chikondibandamwn" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <i class="fab fa-youtube"></i> View All Videos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">CB</div>
+                <p class="footer-text">Platform Specialist</p>
+                <div class="footer-social">
+                    <a href="mailto:chicokbanda@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/chikondibanda" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/chikondibanda" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/@chikondibandamwn" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chikondi Banda. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Countdown logic for 5 days from now
-        const endDate = new Date(Date.now() + 5 * 24 * 60 * 60 * 1000);
-
-        function updateCountdown() {
-            const now = new Date();
-            const diff = endDate - now;
-
-            if (diff <= 0) {
-                document.getElementById('days').textContent = '0';
-                document.getElementById('hours').textContent = '00';
-                document.getElementById('minutes').textContent = '00';
-                document.getElementById('seconds').textContent = '00';
-                return;
-            }
-
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-            const minutes = Math.floor((diff / (1000 * 60)) % 60);
-            const seconds = Math.floor((diff / 1000) % 60);
-
-            document.getElementById('days').textContent = days;
-            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-        }
-
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
